@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Argentina</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/732/732229.png" type="image/x-icon"> <!--con esto hize que en la ventana de mi proyecto se pueda ver el logo-->
+    <style>
+        .container {
+            gap: 15px;
+            padding: 140px;
+        } /* Cree la clase container que es el contenedor del header, y puse las etiquetas gap(para para la separacion de los costados) y padding (para la separacion del alto) */
+
+        .box1 {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            height: 40px;
+            align-items: center;
+        } /*En esta caja utilize un display flex para poder mover las cajas que estan dentro, le cambie el color al fondo con background-color y a las letras con color, tambien cambie la altura con height y alinie las cajas con align items */
+
+        .box2 {
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(238, 238, 238);
+            align-items: center;
+        } /*aca tambien hize casi lo mismo movi las cajas con display flex y puse diferente colores de fondo y de letras*/
+
+        .list1 {
+            gap: 15px;
+            display: flex;
+            list-style: none
+        } /* utilizamos gap para dividir los elementos, y list-style en none para que no salgan los puntitos de cada item de la lista la lista*/
+
+        .list1 li {
+            border-right: 2px solid black;
+            padding-right: 15px;
+        } /*utilizamos esto para separar con lineas en el medio*/
+
+        .list1 a {
+            color: black;
+        }
+
+        .box3 {
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+        } 
+
+        .list2 {
+            gap: 15px;
+            display: flex;
+            list-style: none
+        }
+
+        .list2 li {
+            list-style: none;
+        }
+
+        .list2 a {
+            color: black;
+        }
+
+        .box4 {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .cantproduct {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .filtros {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 15px;
+        }
+
+        .productos1 {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .lonuevo {
+            color: rgb(199, 82, 40);
+        }
+
+
+        .futer {
+            color: white;
+            background-color: black;
+            padding: 35px;
+        } 
+
+        footer li {
+            list-style: none;
+        } /*el list style es para sacar los puntos que tiene la lista*/
+
+        footer a {
+            color: white;
+        }
+
+        .cajafut {
+            display: flex;
+            justify-content: space-around;
+            height: 350px;
+
+        }
+
+        .fut2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hotfut {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .header1 {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        } /*position sirve para la posicon de un elemento el top sirve para alinear el texto y que se separe del top y width sirve para alinear en el ancho*/
+
+        .logos {
+            gap: 40px;
+        }
+
+        .logowasa {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            padding: 10px;
+
+        } /*position para mantener la posicion y right y bottom sirve para cambiar la posicion del elemento*/
+    </style>
+
+</head>
+
+<body>
+    <header class="header1"> <!--cree una caja header que va a contener todos los elementos del encabezado-->
+        <div class="box1">
+            <b>6 cuotas sin interés en todo el sitio</b>
+        </div>
+        <div class="box2">
+            <div> <img
+                    src="https://nikearprod.vtexassets.com/assets/vtex.file-manager-graphql/images/f97c1ee4-0e66-4225-b378-f4ae7d491bc7___39627060035c5a0d813f57675cef86ea.svg"
+                    width="30px"></div>
+            <div>
+
+                <ul class="list1">
+                    <li><a href="">Suscribite</a></li>
+                    <li><a href="">Buscar tienda</a></li>
+                    <li><a href="">Eventos</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--luego creamos una de las cajas que contiene el encabezado, la cual contiene una imagen y una lista desordenada-->
+
+
+        <div class="box3"> <!--dentro del header creamos clases box que son las que estan dentro de la caja header-->
+            <div><img
+                    src="https://nikearprod.vtexassets.com/assets/vtex/assets-builder/nikearprod.store/2.0.63/icons/Assets_for_off%20platform/swoosh___33f7ffaf2fc124733c2c4a60a12a1160.svg"
+                    width="70px"></div>
+            <nav>
+                <ul class="list2">
+                    <li><a href="https://www.nike.com.ar/destacados?page=2"><b>Destacados</b></a></li>
+                    <li><a href="https://www.nike.com.ar/hombre"><b>Hombre</b></a></li>
+                    <li><a href="https://www.nike.com.ar/mujer"><b>Mujer</b></a></li>
+                    <li><a href="https://www.nike.com.ar/nike/nino-a?page=2"><b>Niño/a</b></a></li>
+                    <li><a href="https://www.nike.com.ar/accesorios?page=2"><b>Accesorios</b></a></li>
+                    <li><a
+                            href="https://www.nike.com.ar/oportunidades?map=productclusternames&page=2"><b>Oportunidades</b></a>
+                    </li>
+                </ul> <!--creamos otra lista desordenada-->
+            </nav>
+            <div class="box4">
+                <input type="search" type="text" placeholder="Buscar">
+                <img src="https://cdn-icons-png.flaticon.com/512/158/158728.png" width="25px">
+            </div> <!--luego puse un imput de tipo search-->
+        </div>
+
+    </header> <!--cerramos el header-->
+    <main class="container"> <!--luego creamos una caja main que es la que va a contener el contenido principal-->
+        <div class="cantproduct">
+            <div>90 productos</div>
+            <div class="filtros">
+                <div>Ocultar Filtros<img src="https://cdn-icons-png.flaticon.com/256/8414/8414929.png" width="20px">
+                </div>
+                <div>Ordenar por Más reciente<img src="https://cdn-icons-png.flaticon.com/256/3916/3916955.png"
+                        width="17px"></div>
+            </div>
+        </div> <!--creamos etiquetas div con clases para luego mover las cajas con css-->
+        <div class="productos1">
+            <div>
+                <div><img
+                        src="https://nikearprod.vtexassets.com/arquivos/ids/1088218-1000-1000?v=638627830380900000&width=1000&height=1000&aspect=true"
+                        width="500px"></div>
+                <div class="lonuevo"><b>Lo nuevo</b></div>
+                <div><b>Nike Heritage</b></div>
+                <div>Riñonera de Moda Unisex</div>
+                <div><b>$59.999</b></div>
+            </div>
+            <div>
+                <div><img
+                        src="https://nikearprod.vtexassets.com/arquivos/ids/1087547-1000-1000?v=638627820412070000&width=1000&height=1000&aspect=true"
+                        width="500px"></div>
+                <div class="lonuevo"><b>Lo nuevo</b></div>
+                <div><b>Nike Elemental</b></div>
+                <div>Mochila de Moda para Niño/a</div>
+                <div><b>$45.999</b></div>
+            </div>
+            <div>
+                <div><img
+                        src="https://nikearprod.vtexassets.com/arquivos/ids/1100099-1000-1000?v=638628240535000000&width=1000&height=1000&aspect=true"
+                        width="500px"></div>
+                <div class="lonuevo"><b>Lo nuevo</b></div>
+                <div><b>Nike Gym Club</b></div>
+                <div>Bolso de Entrenamiento para Mujer</div>
+                <div><b>$104.499</b></div>
+            </div>
+        </div>
+        <div class="productos1">
+            <div>
+                <div><img
+                        src="https://nikearprod.vtexassets.com/arquivos/ids/1087544-1000-1000?v=638627820352200000&width=1000&height=1000&aspect=true"
+                        width="500px"></div>
+                <div class="lonuevo"><b>Lo nuevo</b></div>
+                <div><b>Nike brasilia</b></div>
+                <div>Mochila de Moda Unisex</div>
+                <div><b>$95.999</b></div>
+            </div>
+            <div>
+                <div><img
+                        src="https://nikearprod.vtexassets.com/arquivos/ids/973007-1000-1000?v=638551869959800000&width=1000&height=1000&aspect=true"
+                        width="500px"></div>
+                <div class="lonuevo"><b>Lo nuevo</b></div>
+                <div><b>Nike Phantom</b></div>
+                <div>Pelota de Futbol Unisex</div>
+                <div><b>$41.999</b></div>
+            </div>
+            <div>
+                <div><img
+                        src="https://nikearprod.vtexassets.com/arquivos/ids/1087505-1000-1000?v=638627819666270000&width=1000&height=1000&aspect=true"
+                        width="500px"></div>
+                <div class="lonuevo"><b>Lo nuevo</b></div>
+                <div><b>Nike Heritage</b></div>
+                <div>Mochila de Moda Unisex</div>
+                <div><b>$77.999</b></div>
+            </div>
+        </div>
+        <!--despues creamos cajas para poner los productos y poder moverlos o acomodarlos con flexbox y para poder cambiarle el color a la letra-->
+        </div>
+    </main> <!--cerramos el main para poder comenzar con el footer-->
+    <footer class="futer">
+        <div class="cajafut">
+            <div>
+                <ul>
+                    <li><b><a href="">BUSCAR TIENDA</a></b></li>
+                    <li><b><a href="">SUMATE A LA COMUNIDAD</a></b></li>
+                    <li><b><a href="">SEGUI TU PEDIDO</a></b></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><b><a href="">AYUDA</a></b></li>
+                    <li><a href="">Envios y entregas</a></li>
+                    <li><a href="">Devoluciones</a></li>
+                    <li><a href="">Cambios</a></li>
+                    <li><a href="">Autogestionar mi devolucion</a></li>
+                    <li><a href="">Opciones de pago</a></li>
+                    <li><a href="">Contactate</a></li>
+                    <li><a href="">Defensa al consumidor</a></li>
+                    <li><a href="">Libro de quejas Online</a></li>
+                    <li><b><a href="">Boton de arrepentimiento</a></b></li>
+                    <li><a href="">Ver todos</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><b><a href="">ACERCA DE NIKE</a></b></li>
+                    <li><a href="">Proposito</a></li>
+                    <li><a href="">Noticias</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><b><a href="">NOVEDADES NIKE</a></b></li>
+                    <li><a href="">Encontra tu calsado</a></li>
+                    <li><a href="">¿Como elegir tu top?</a></li>
+                    <li><a href="">Tips saludables</a></li>
+                    <li><a href="">promociones</a></li>
+                </ul>
+            </div>
+            <!--creamos cajas para hacer listas-->
+            <div>
+                <img src="https://nikearprod.vtexassets.com/assets/vtex.file-manager-graphql/images/3b08c03e-be05-49c1-9579-193190c40b2e___d5b5ce1ab2c443765cd3beb7183e1cae.jpg"
+                    width="30px">
+            </div>
+            <div class="logo">
+                <img src="https://images.freeimages.com/image/large-previews/2e5/x-twitter-logo-on-grey-circle-5694255.png"
+                    width="25px">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Facebook_LOGO.png/600px-Facebook_LOGO.png?20221110081945"
+                    width="25px">
+                <img src="https://e7.pngegg.com/pngimages/415/996/png-clipart-youtube-computer-icons-logo-social-media-youtube-angle-text.png"
+                    width="25px">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6aDhzG7egzm8IkadAiXKuoL7YLnWJ08pyEg&s"
+                    width="25px">
+            </div><!--luego ponemos los logos con img-->
+
+        </div>
+        <div class="fut2">
+            <div>
+                <img src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-vector-location-icon-png-image_1028505.jpg"
+                    width="15px">
+                <b>Argentina</b>
+                © 2023 Southbay S.R.L. Todos los derechos reservados.
+            </div>
+            <div class="hotfut">
+                <div>Hot Sale</div>
+                <div>Términos y Condiciones</div>
+                <div>Política de privacidad y cookies</div>
+            </div>
+        </div>
+        <!--creamos una caja que contiene dos cajas con dos clases diferentes para poder dividirlas, y las diferentes clases son para modificarlas con css-->
+        <div class="logowasa">
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" width="60px"></a>
+        </div> <!--luego aca puse un logo para hacer logo fijo con css-->
+    </footer>
+
+
+</body>
+
+</html>
